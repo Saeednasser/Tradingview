@@ -102,7 +102,7 @@ if st.button("🔎 تنفيذ التحليل"):
                     results.append((sym_code.replace(suffix,''), round(price, 2)))
             except Exception:
                 continue
-
+ 
         if results:
             st.success("✅ الرموز التي تحقق فيها الاختراق:")
             df_out = pd.DataFrame(results, columns=["الرمز", "سعر الإغلاق"])
